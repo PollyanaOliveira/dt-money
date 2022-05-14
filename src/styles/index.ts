@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 
   --text-title: #363f5f;
   --text-body: #969cb3;
-  --input-background: #e7e9ee
+  --input-background: #e7e9ee;
   --border-color: #d7d7d7;
 
   --background: #f0f2f5;
