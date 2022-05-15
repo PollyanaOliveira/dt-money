@@ -1,6 +1,5 @@
-import { FormEvent, useState, useContext } from 'react';
+import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
-import { api } from '../../services/api';
 import { useTransactions } from '../../hooks/useTransactions';
 import { Container, TransactionTypeContainer, RadioBox } from './style';
 import incomeImg from '../../assets/income.svg';
@@ -9,7 +8,7 @@ import closeImg from '../../assets/close.svg';
 
 interface NewTrasactionModalProps {
   isOpen: boolean;
-  onRequestClose: () => Promise<void>;
+  onRequestClose: () => void;
 }
 
 const NewTrasactionModal = ({
